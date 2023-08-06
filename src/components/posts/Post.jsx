@@ -26,7 +26,7 @@ const Post = ({img}) => {
             </span>
           </div>
           <span className="postTitle">
-            <Link to="/post/abc" className="link" state={{myUrl:img}} >
+            <Link to="/post/abc" className="link" state={{myUrl:img}} style={{color:'black'}} >
               Noumaan Blog Template
             </Link>
           </span>
