@@ -12,42 +12,42 @@ const Navbar = () => {
         <div className="topCenter">
           <ul className="topList">
             <li className="topListItem">
-              <Link className="link" to="/">
+              <NavLink className="link" to="/">
                 HOME
-              </Link>
+              </NavLink>
             </li>
-            <li className="topListItem"> <Link className="link" to="/blogs">
+            <li className="topListItem"> <NavLink className="link" to="/blogs">
                 BLOGS
-              </Link></li>
+              </NavLink></li>
             <li className="topListItem">CONTACT</li>
             <li className="topListItem">
-              <Link className="link" to="/write">
+              <NavLink className="link" to="/write">
                 WRITE
-              </Link>
+              </NavLink>
             </li>
             {user && <li className="topListItem" onClick={()=>setUser(false)}>LOGOUT</li>}
           </ul>
         </div>
         <div className="topRight">
           {user ? (
-            <Link className="link" to="/settings">
+            <NavLink className="link" to="/settings">
               <img
                 className="topImg"
                 src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg"
                 alt=""
               />
-            </Link>
+            </NavLink>
           ) : (
             <ul className="topList">
               <li className="topListItem">
-                <Link className="link" to="/login">
+                <NavLink className="link" to="/login">
                   LOGIN
-                </Link>
+                </NavLink>
               </li>
               <li className="topListItem">
-                <Link className="link" to="/register">
+                <NavLink className="link" to="/register">
                   REGISTER
-                </Link>
+                </NavLink>
               </li>
             </ul>
           )}
